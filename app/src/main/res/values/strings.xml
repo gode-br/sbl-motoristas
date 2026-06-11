@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Midnight Driver</string>
+    <string name="accessibility_description">Monitoramento em tempo real de corridas do inDrive para faturamentos automáticos.</string>
+</resources>

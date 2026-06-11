@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "898494743554",
+    "project_id": "sbl-motoristas",
+    "storage_bucket": "sbl-motoristas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898494743554:android:d08e80721a4c03f2a4531b",
+        "android_client_info": {
+          "package_name": "com.aistudio.motoristafinancas.vxtlpa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898494743554-mepd43asbmsn99h30o5tu9q41mkbnort.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aistudio.motoristafinancas.vxtlpa",
+            "certificate_hash": "f97e7b8d83436090edcf60e8a0e1b5aace64d000"
+          }
+        },
+        {
+          "client_id": "898494743554-rrk0gimnjvr8a9ne8u1tl0j0ioet6uvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBBQD1aHfuBIB9ovsE4sNvJgY24HAyamk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898494743554-rrk0gimnjvr8a9ne8u1tl0j0ioet6uvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

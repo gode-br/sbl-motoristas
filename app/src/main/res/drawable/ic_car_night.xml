@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- 1. Fundo do Card (Arredondado, Preto-Espacial/Marinho Escuro) -->
+    <path
+        android:fillColor="#0D111D"
+        android:pathData="M12,2 C6.47,2 2,6.47 2,12 L2,88 C2,93.53 6.47,98 12,98 L88,98 C93.53,98 98,93.53 98,88 L98,12 C98,6.47 93.53,2 88,2 Z" />
+
+    <!-- 2. Detalhes de Fundo (Nuvens de Noite / Estrelas Cintilantes no Céu) -->
+    <!-- Estrela pequena 1 -->
+    <path
+        android:fillColor="#4DFFFFFF"
+        android:pathData="M25,20l1,1.5l1.5,1l-1.5,1l-1,1.5l-1,-1.5l-1.5,-1l1.5,-1z" />
+    <!-- Estrela pequena 2 -->
+    <path
+        android:fillColor="#4DFFFFFF"
+        android:pathData="M62,15l0.8,1.2l1.2,0.8l-1.2,0.8l-0.8,1.2l-0.8,-1.2l-1.2,-0.8l1.2,-0.8z" />
+    <!-- Estrela pequena 3 -->
+    <path
+        android:fillColor="#4DFFFFFF"
+        android:pathData="M48,28l0.6,0.9l0.9,0.6l-0.9,0.6l-0.6,0.9l-0.6,-0.9l-0.9,-0.6l0.9,-0.6z" />
+    <!-- Nuvem sutil ao fundo -->
+    <path
+        android:fillColor="#151B2E"
+        android:pathData="M24,35 Q30,29 38,32 Q44,28 50,33 L54,35 Z" />
+
+    <!-- 3. Efeito de Brilho do Retalho de Crescimento (Glow do Gráfico) -->
+    <!-- Brilho largo externo -->
+    <path
+        android:strokeWidth="12"
+        android:strokeColor="#1AFFEA7F"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M22,65 Q40,32 52,43 T75,25" />
+    <!-- Brilho médio médio -->
+    <path
+        android:strokeWidth="6"
+        android:strokeColor="#4DFFD700"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M22,65 Q40,32 52,43 T75,25" />
+    <!-- Linha do gráfico central (Branco-Amarelo Sólido) -->
+    <path
+        android:strokeWidth="3.5"
+        android:strokeColor="#FFFFD0"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M22,65 Q40,32 52,43 T75,25" />
+
+    <!-- Ponta da Seta indicando crescimento -->
+    <path
+        android:fillColor="#FFFFD0"
+        android:pathData="M69,21 L78,21 L78,30 L74,26 Z" />
+
+    <!-- 4. Estrela Dourada Principal (Estrela de Sucesso / Riqueza) -->
+    <!-- Glow da Estrela Principal -->
+    <path
+        android:fillColor="#4DFFD700"
+        android:pathData="M82,2 L85,11 L94,14 L85,17 L82,26 L79,17 L70,14 L79,11 Z" />
+    <!-- Miolo da Estrela Principal -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M82,6 L84,12 L90,14 L84,16 L82,22 L80,16 L74,14 L80,12 Z" />
+
+    <!-- Símbolo de Cifrão ($) ao lado da estrela -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M81,30 C81,29.1 81.5,28.5 82.2,28.3 C82.2,28.3 82.2,28 82.2,28 L82.2,27 C81.5,26.8 81,26.2 81,25.5 C81,24.5 81.8,24 83,24 C84.2,24 85,24.5 85,25.5 L84,25.5 C84,25 83.5,24.7 83,24.7 C82.5,24.7 82.2,24.9 82.2,25.2 C82.2,25.5 82.5,25.7 83,25.8 L84,26.1 C84.8,26.3 85,26.9 85,27.5 M84,27.5 L85,27.5 L85,28 C84.3,28.2 83.8,28.8 83.8,29.5 L82.8,29.5 C82.8,28.8 83.3,28.2 84,28 M83.8,29.5 C84.3,29.8 84.8,30.3 84.8,31 C84.8,31.8 84,32.2 83,32.2 C81.8,32.2 81,31.8 81,31 L82,31 C82,31.5 82.5,31.7 83,31.7 C83.5,31.7 83.8,31.5 83.8,31.2 C83.8,31 83.5,30.8 83,30.7 L82,30.4 C81.2,30.2 81,29.6 81,29 L81,28.5 L82,28.5 L82,28" />
+
+    <!-- 5. O CARRO ESPORTIVO ROXO (No Estilo do Uploaded) -->
+    <!-- Farol dianteiro aceso (Luz) -->
+    <path
+        android:fillColor="#24FFFF90"
+        android:pathData="M78,74 L94,76 L94,84 L78,78 Z" />
+
+    <!-- Chassi do carro com gradiente de roxo escuro para roxo claro -->
+    <path
+        android:fillColor="#3A1C54"
+        android:pathData="M 16,77 C 16,73 18,70 21,69 C 23,69 24,67 27,64 C 33,58 45,56 53,57 C 59,58 63,61 68,65 C 70,67 73,69 76,72 C 79,74 81,76 81,78 L 81,81 L 71,81 C 71,76 67,72 62,72 C 57,72 53,76 53,81 L 37,81 C 37,76 33,72 28,72 C 23,72 19,76 19,81 L 16,81 Z" />
+
+    <!-- Destaque Superior do Teto / Reflexo Prateado -->
+    <path
+        android:fillColor="#5A2E80"
+        android:pathData="M 27,64 C 33,58 45,56 53,57 C 59,58 63,61 68,65 L 67,66 C 62,62 58,60 53,59 C 45,58 34,60 28,66 Z" />
+
+    <!-- Janela Do Carro (Branco com reflexo prateado) -->
+    <path
+        android:fillColor="#D9E2EC"
+        android:pathData="M38,64 C44,60 52,60 58,61 C61,62 63,64 65,66 L59,66 Q57,64 52,64 Q42,64 38,66 Z" />
+
+    <!-- Lanternas do Carro -->
+    <!-- Farol LED na frente (Amarelo brilhante) -->
+    <path
+        android:fillColor="#FFEAAA"
+        android:pathData="M78,75 L81,75 L80,77 L77,76 Z" />
+    <!-- Lanterna traseira (Vermelho) -->
+    <path
+        android:fillColor="#FF3B30"
+        android:pathData="M16,76 L18,76 L17,78 L15,77 Z" />
+
+    <!-- Rodas do Carro (Preto / Aro prateado) -->
+    <!-- Roda traseira -->
+    <path
+        android:fillColor="#1F2937"
+        android:pathData="M28,87 C24.13,87 21,83.87 21,80 C21,76.13 24.13,73 28,73 C31.87,73 35,76.13 35,80 C35,83.87 31.87,87 28,87 Z" />
+    <path
+        android:fillColor="#9CA3AF"
+        android:pathData="M28,83 C26.34,83 25,81.66 25,80 C25,78.34 26.34,77 28,77 C29.66,77 31,78.34 31,80 C31,81.66 29.66,83 28,83 Z" />
+    <!-- Roda dianteira -->
+    <path
+        android:fillColor="#1F2937"
+        android:pathData="M62,87 C58.13,87 55,83.87 55,80 C55,76.13 58.13,73 62,73 C65.87,73 69,76.13 69,80 C69,83.87 65.87,87 62,87 Z" />
+    <path
+        android:fillColor="#9CA3AF"
+        android:pathData="M62,83 C60.34,83 59,81.66 59,80 C59,78.34 60.34,77 62,77 C63.66,77 65,78.34 65,80 C65,81.66 63.66,83 62,83 Z" />
+</vector>
