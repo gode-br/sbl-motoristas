@@ -12,6 +12,9 @@ Como uma equipe especializada em engenharia mobile Fullstack, analisamos minucio
 *   **Volta ao Ícone de Navegação Consistente**:
     *   *Problema*: Substituição do ícone de menu de turnos por recursos que poderiam conflitar visualmente dependendo de atualizações de assets.
     *   *Solução*: O ícone de navegação da aba "Turnos" na `NavigationBar` foi restaurado com sucesso e elegância para os componentes padrão e fluidos da biblioteca do Material 3 (`Icons.Filled.DirectionsCar` / `Icons.Outlined.DirectionsCar`).
+*   **Integração do Google Services XML/JSON para Autenticação e Nuvem**:
+    *   *Problema*: O aplicativo necessitava de configurações legítimas de identificadores de clientes web e credenciais para o Firebase Sync Engine e autenticação do Google Sign-In.
+    *   *Solução*: O arquivo `/app/google-services.json` contendo as credenciais de cliente da aplicação `com.aistudio.motoristafinancas.vxtlpa` para o projeto Firebase `sbl-motoristas` foi integrado e compilado com sucesso.
 
 ---
 
@@ -34,9 +37,8 @@ viewModelScope.launch {
 *   **Diagnóstico**: O uso de um delay estático de `1200ms` é uma abordagem frágil para esperar o carregamento assíncrono do RoomDB. Se o dispositivo estiver sob alta carga de processamento, o carregamento pode levar mais de 1.2 segundos, ignorando a sincronização automática.
 *   **Proposta de Melhoria**: Substituir o timer em favor do operador de fluxo `.first()` ou combinar reativamente os estados reativos dos fluxos usando o StateFlow do RoomDB assim que forem preenchidos não-vazios.
 
-### C. Chamadas ao Google Sign-In Sem Tratamento de Falha Dinâmica do Web Client ID
-*   **Diagnóstico**: No arquivo `FirebaseSyncManager.kt`, o método `isGoogleConfigured` verifica se `default_web_client_id` existe nas strings dinamicamente geradas pelo plugin Google Services. Caso não esteja configurado, o botão do Google na tela de Login ou apenas emite logs no Logcat ou gera comportamentos assíncronos não capturados formalmente com avisos visuais legíveis de "Configuração Necessária" para o usuário.
-*   **Proposta de Melhoria**: Exibir um Toast ou diálogo específico direcionando o desenvolvedor/usuário final sobre a ausência do arquivo `google-services.json` de forma explícita na UI.
+### C. Chamadas ao Google Sign-In com Configuração Completa do Web Client ID (Resolvido)
+*   **Status**: Resolvido via inserção do `google-services.json` atualizado. O Web Client ID está agora associado corretamente para o processo de assinatura criptográfica e geração automática do SSO de login.
 
 ### D. Ausência de Foreground Service para Notificações de Turno Ativo
 *   **Diagnóstico**: A notificação contínua (`Ongoing`) gerada por `ExpenseNotificationHelper.updateActiveShiftNotification()` é disparada a partir do ciclo de vida da Activity em background. No Android 13 e superior (API 33+), o sistema operacional é extremamente rigoroso quanto à suspensão de processos em segundo plano (Doze Mode). Se a Activity do app for destruída, a notificação contínua de turno pode congelar ou parar de atualizar o saldo em tempo real.

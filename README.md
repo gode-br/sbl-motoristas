@@ -77,6 +77,6 @@ O app segue os melhores padrões internacionais do ecossistema Android:
 
 1.  Abra o projeto no **Android Studio**.
 2.  Insira as credenciais e conexões do Firebase em seu arquivo correspondente no painel de segredos (Secrets Panel do AI Studio).
-3.  Configure o arquivo `google-services.json` no diretório `/app` caso queira usufruir da sincronização em tempo real na nuvem do Firebase Firestore legítima.
+3.  **Configuração Concluída**: O arquivo `google-services.json` já está totalmente configurado e integrado no diretório `/app`, habilitando a sincronização em tempo real na nuvem do Firebase Firestore e Google Sign-In nativo legítimo.
 4.  Execute a compilação utilizando as tarefas Gradle recomendadas.
 5.  **Atenção**: Para testar a captura automática de corridas do InDrive, certifique-se de conceder a permissão de **Serviço de Acessibilidade** ao app **Midnight Driver** nas configurações de acessibilidade do aparelho / emulador.

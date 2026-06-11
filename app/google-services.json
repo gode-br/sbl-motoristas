@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "898494743554-p0tuhortu6j04l4v1fb2k7hmr4fhtd6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aistudio.motoristafinancas.vxtlpa",
+            "certificate_hash": "c8ab71643be7b780682dacb1132db862e7321c9a"
+          }
+        },
+        {
           "client_id": "898494743554-rrk0gimnjvr8a9ne8u1tl0j0ioet6uvv.apps.googleusercontent.com",
           "client_type": 3
         }
